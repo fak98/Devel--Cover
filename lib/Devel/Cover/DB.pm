@@ -400,6 +400,8 @@ sub calculate_summary
         $c->calculate_percentage($self, $t->{$criterion});
     }
     Devel::Cover::Criterion->calculate_percentage($self, $t->{total});
+
+    # print STDERR Dumper $self->{summary};
 }
 
 sub trimmed_file
@@ -1069,7 +1071,7 @@ Devel::Cover::DB::Criterion->locations, and Devel::Cover::DB::Location->data
 
 =item * Devel::Cover::DB::Base->get
 
-Aliased to Devel::Cover::DB::Cover->file, Devel::Cover::DB::File->criteriom,
+Aliased to Devel::Cover::DB::Cover->file, Devel::Cover::DB::File->criterion,
 Devel::Cover::DB::Criterion->location, and Devel::Cover::DB::Location->datum
 
 =back
