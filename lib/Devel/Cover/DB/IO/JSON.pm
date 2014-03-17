@@ -26,7 +26,7 @@ BEGIN
 sub new
 {
     my $class = shift;
-    my $self  = { @_ };
+    my $self  = { options => "", @_ };
     bless $self, $class
 }
 
